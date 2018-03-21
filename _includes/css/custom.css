@@ -16,3 +16,8 @@
     white-space: initial;
   }
 }
+
+.navbar-default .navbar-brand {
+	font-family: 'Comfortaa', cursive;
+	font-size:2em;
+}

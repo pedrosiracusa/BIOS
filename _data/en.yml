@@ -1,5 +1,6 @@
 ---
 whatWeDo: What We Do
+prereqs: Prerequisites
 events: Events
 contact: Contact
 tellMeMore: Tell Me More
@@ -15,6 +16,9 @@ activities:
   - title: Community Building
     description: 'Meet new people in your field, organization or community - and find out what we can do when we work together.'
     icon: fa-group
+
+prereqsSubheading: 'What do we need to know or to do for joining?'
+prereqsText: 'Put text'
 
 events: Events
 eventsSubheading: Our upcoming and recent events

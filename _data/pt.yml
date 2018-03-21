@@ -1,20 +1,25 @@
 ---
 whatWeDo: O que fazemos
+prereqs: Pré-requisitos
 events: Eventos
 contact: Contato
 tellMeMore: Saiba mais
 
 activitiesSubheading: 'E que você também pode fazer'
 activities:
-  - title: Compartilhando habilidades
+  - title: Compartilhamos habilidades
     description: 'Compartilhe suas habilidades favoritas e ferramentas com amigos e colegas em reuniões, em ambiente amigável e sem pressão.</p>'
     icon: fa-comment
-  - title: Trabalhando junto
+  - title: Trabalhamos juntos
     description: 'Junte-se para trabalhar em seus projetos de programação, ajudem uns aos outros e compartilhe seu trabalho.'
     icon: fa-laptop
-  - title: Criando uma comunidade
+  - title: Criamos uma comunidade
     description: 'Conheça novas pessoas da sua área, organização ou comunidade - e descubra o que podemos fazer quando trabalhamos juntos.'
     icon: fa-group
+
+prereqsSubheading: 'O que preciso saber ou fazer para participar?'
+prereqsText: 'Você só precisa ter interesse em aprender coisas novas e pensar fora da caixa!'
+
 
 events: Eventos
 eventsSubheading: Nossos próximos eventos

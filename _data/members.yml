@@ -1,6 +1,8 @@
-- name: Bill Mills
-  affiliation: TRIUMF
-  github: BillMills
+- name: Pedro de Siracusa
+  position: Mestrando em Modelagem Computacional
+  affiliation: Laboratório Nacional de Computação Científica - LNCC 
+  github: pedrosiracusa
   interests:
-    - Programming
-    - Open Science
+    - Data Science
+    - Machine Learning
+    - Biodiversidade
