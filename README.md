@@ -1,20 +1,10 @@
 ```
- BBBBBBBBBBBBBBBBB   IIIIIIIIII     OOOOOOOOO      SSSSSSSSSSSSSSS 
-B::::::::::::::::B  I::::::::I   OO:::::::::OO    SS:::::::::::::::S
-B::::::BBBBBB:::::B I::::::::I OO:::::::::::::OO S:::::SSSSSS::::::S
-BB:::::B     B:::::BII::::::IIO:::::::OOO:::::::OS:::::S     SSSSSSS
-  B::::B     B:::::B  I::::I  O::::::O   O::::::OS:::::S            
-  B::::B     B:::::B  I::::I  O:::::O     O:::::OS:::::S            
-  B::::BBBBBB:::::B   I::::I  O:::::O     O:::::O S::::SSSS         
-  B:::::::::::::BB    I::::I  O:::::O     O:::::O  SS::::::SSSSS    
-  B::::BBBBBB:::::B   I::::I  O:::::O     O:::::O    SSS::::::::SS  
-  B::::B     B:::::B  I::::I  O:::::O     O:::::O       SSSSSS::::S 
-  B::::B     B:::::B  I::::I  O:::::O     O:::::O            S:::::S
-  B::::B     B:::::B  I::::I  O::::::O   O::::::O            S:::::S
-BB:::::BBBBBB::::::BII::::::IIO:::::::OOO:::::::OSSSSSSS     S:::::S
-B:::::::::::::::::B I::::::::I OO:::::::::::::OO S::::::SSSSSS:::::S
-B::::::::::::::::B  I::::::::I   OO:::::::::OO   S:::::::::::::::SS 
-BBBBBBBBBBBBBBBBB   IIIIIIIIII     OOOOOOOOO      SSSSSSSSSSSSSSS   
+██████╗ ██╗ ██████╗ ███████╗
+██╔══██╗██║██╔═══██╗██╔════╝
+██████╔╝██║██║   ██║███████╗
+██╔══██╗██║██║   ██║╚════██║
+██████╔╝██║╚██████╔╝███████║
+╚═════╝ ╚═╝ ╚═════╝ ╚══════╝
 ```
 
 # BIOS (um [grupo de estudos Mozilla](https://science.mozilla.org/programs/studygroups))
