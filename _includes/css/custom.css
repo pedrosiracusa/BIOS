@@ -21,3 +21,13 @@
 	font-family: 'Comfortaa', cursive;
 	font-size:2em;
 }
+
+#prereqs p{
+	font-size:1.5em;
+	font-family: 'Comfortaa', cursive;
+}
+
+
+#contact h3.section-subheading{
+	color:#ddd;
+}
