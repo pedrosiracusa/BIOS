@@ -20,21 +20,66 @@
                   {% assign nowday = nowday | minus: 2 %}
                   {% if postyear > nowyear or postday >= nowday and postyear >= nowyear %}
                     {% assign isEvent = 1 %}
-                    <li>
-                      <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
-                      <div class='eventSub'><a href="https://mozillascience.github.io/study-group-orientation/3.4-add-event.html">{{ post.text }}</a></div>
-                    </li>
+					<li>
+						<div class="event row">
+							<div class="event-date col-lg-2 col-lg-offset-2">
+								<ul>
+									{% assign m = post.date | date: "%-m" %}
+									<li>
+										{% case m %}
+											{% when '1' %}Janeiro
+											{% when '2' %}Fevereiro
+											{% when '3' %}Março
+											{% when '4' %}Abril
+											{% when '5' %}Maio
+											{% when '6' %}Junho
+											{% when '7' %}Julho
+											{% when '8' %}Agosto
+											{% when '9' %}Setembro
+											{% when '10' %}Outubro
+											{% when '11' %}Novembro
+											{% when '12' %}Dezembro
+										{% endcase %}
+									</li>
+									<li>{{ post.date | date: "%-d" }}</li>
+									<li>{{ post.date | date: "%Y" }}</li>
+									<li>
+									{% assign wd = post.date | date:"%w" %}
+									{% case wd %}
+										{% when '0' %}Domingo		
+										{% when '1' %}Segunda-feira		
+										{% when '2' %}Terça-feira		
+										{% when '3' %}Quarta-feira		
+										{% when '4' %}Quinta-feira		
+										{% when '5' %}Sexta-feira		
+										{% when '6' %}Sábado		
+									{% endcase %}
+									</li>
+									<li>{{ post.startTime }}-{{ post.endTime }}</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<a class="eventTitle" href="{{ post.link }}" target="_blank">
+									<h3>{{ post.title }}</h3>
+								</a>
+								<div class="eventDesc"> 
+									<p>{{ post.text }}</p>
+									<ul>
+									{% for goal in post.goals %}
+										<li>{{ goal }}</li>
+									{% endfor %}
+									</ul>
+									<p>{{ post.details }}</p>
+									<p>{{ post.location }}</p>
+								</div>
+							</div>
+						</div>
+					</li>
                   {% endif %}
                 {% endfor %}
                 {% if isEvent == 0 %}
                   <a class='eventTitle' href="{{ site.github.issues_url }}">{{site.data[site.language].eventPlaceholder}}</a>
                 {% else %}
-                <div class="row">
-                      <div class="col-lg-12 text-center">
-                          <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html" class="btn btn-xl eventSuggest">{{site.data[site.language].suggestEvent}}</a>
-                          <a href="http://mozillascience.github.io/studyGroupHandbook/event-types.html#workalong" class="btn btn-xl eventSuggest">{{site.data[site.language].leadership}}</a>
-                      </div>
-                </div>
                 {% endif %}
               </ul>
               <!--past events-->
@@ -59,8 +104,37 @@
                           {% assign nowday = nowday | minus: 2 %}
                           {% if postyear < nowyear or postday < nowday and postyear == nowyear %}
                             <li>
-                              <a class='eventTitle' href="{{ post.link }}">{{ post.title }}, {{ post.location }}, {{ post.date | date: "%-d %B %Y"}}, {{post.startTime | date:"%r"}} </a>
-                              <div class='eventSub'>{{ post.text }}</div>
+								<div class="event row">
+									<div class="event-date col-lg-2 col-lg-offset-2">
+										<ul>
+											{% assign m = post.date | date: "%-m" %}
+											<li>
+												{% case m %}
+													{% when '1' %}Janeiro
+													{% when '2' %}Fevereiro
+													{% when '3' %}Março
+													{% when '4' %}Abril
+													{% when '5' %}Maio
+													{% when '6' %}Junho
+													{% when '7' %}Julho
+													{% when '8' %}Agosto
+													{% when '9' %}Setembro
+													{% when '10' %}Outubro
+													{% when '11' %}Novembro
+													{% when '12' %}Dezembro
+												{% endcase %}
+											</li>
+											<li>{{ post.date | date: "%-d" }}</li>
+											<li>{{ post.date | date: "%Y" }}</li>
+										</ul>
+									</div>
+									<div class="col-lg-6">
+										<a class="eventTitle" href="{{ post.link }}">
+											<h3>{{ post.title }}</h3>
+										</a>
+										<div class="eventDesc"> {{ post.text }}</div>
+									</div>
+								</div>
                             </li>
                           {% endif %}
                         {% endfor %}

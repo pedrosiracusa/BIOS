@@ -31,3 +31,32 @@
 #contact h3.section-subheading{
 	color:#ddd;
 }
+
+
+/*============
+Events style
+============*/
+
+.event-date{
+	margin-top:24px;
+}
+.event-date > ul{
+	list-style: none;
+	line-height: 1;
+	text-align: center;
+}
+.event-date > ul > li:first-child,
+.event-date > ul > li:nth-child(3) {
+	font-size: 1.4em;
+}
+.event-date > ul > li:nth-child(2) {
+	font-size:3em;
+}
+.event-date > ul > li:nth-child(4){
+	padding-top: 1em;
+	font-size:1.1em;
+}
+.event-date > ul > li:nth-child(5){
+	padding-top: 0.5em;
+	font-size:1.1em;
+}

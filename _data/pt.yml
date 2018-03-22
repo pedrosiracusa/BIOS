@@ -22,11 +22,11 @@ prereqsText: 'Você só precisa ter interesse em aprender coisas novas e pensar 
 
 
 events: Eventos
-eventsSubheading: Nossos próximos eventos
+eventsSubheading: 'Confira nossos próximos eventos. Ou <a href="https://github.com/pedrosiracusa/BIOS/issues/1" target="_blank">proponha</a> um novo!'
 eventPlaceholder: Nada ainda! Proponha um evento aqui.
 suggestEvent: Sugira um evento
 leadership: Como mediar um Grupo de Estudos
-pastEvents: See Our Past Events
+pastEvents: Eventos anteriores
 
 notification: Quer ser notificado dos eventos?
 watching: 'Vá até <a href="%GITHUB_REPO_URL%">GitHub</a> e acompanhe nosso respositório, assim:'
