@@ -11778,6 +11778,7 @@ div#notebook {
 <p><h3><center>Grupo de estudos <a href="https://pedrosiracusa.github.io/BIOS" target="_blank">BIOS</a></center></h3></p>
 <p><h1><center>Programando em Python</center><center><small>Construindo uma Calculadora de Bactérias</small></center></h1></p>
 <p><h3><center>Nível: Iniciante absoluto</center></h3></p>
+<h4><center>Data: 23/03/2018</center></h4>
 <h4><center>Tempo estimado: 30 minutos</center></h4>
 <h4><center>Autor: <a href="https://pedrosiracusa.github.io" target="_blank">Pedro C. de Siracusa</a></center></h4>
 </div>
@@ -11787,7 +11788,16 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Ol&#225;-mundo!">Ol&#225; mundo!<a class="anchor-link" href="#Ol&#225;-mundo!">&#182;</a></h4><p>Este é o primeiro notebook que posto para o grupo de estudos <a href="https://pedrosiracusa.github.io/BIOS">BIOS</a>, como um incentivo para quem quiser começar no mundo da programação <em>Python</em>. Você pode acompanhar, mexer e executar o código acessando esta <a href="https://mybinder.org/v2/gh/pedrosiracusa/bios/gh-pages?filepath=notebooks%2Fbaccalc.ipynb">versão <em>live</em></a> do notebook. Experimente!!</p>
+<h4 id="Uma-vers&#227;o-'live'-deste-notebook-est&#225;-dispon&#237;vel-aqui.">Uma vers&#227;o '<em>live</em>' deste <strong>notebook</strong> est&#225; dispon&#237;vel <a href="https://mybinder.org/v2/gh/pedrosiracusa/bios/gh-pages?filepath=notebooks%2Fbaccalc.ipynb" target="_blank">aqui</a>.<a class="anchor-link" href="#Uma-vers&#227;o-'live'-deste-notebook-est&#225;-dispon&#237;vel-aqui.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Ol&#225;-BIOS!">Ol&#225; BIOS!<a class="anchor-link" href="#Ol&#225;-BIOS!">&#182;</a></h3><p>Este é o primeiro notebook que posto para o grupo de estudos <a href="https://pedrosiracusa.github.io/BIOS" target="_blank">BIOS</a>, como um incentivo para quem quiser começar no mundo da <strong>programação</strong> e <strong>análise de dados</strong> com  a linguagem <a href="https://www.python.org/" target="_blank">*Python*</a>. 
+Ao longo do tempo farei mais destas postagens em forma de <a href="http://jupyter.org/" target="_blank">Jupyter Notebooks</a>, explicando diversos aspectos da linguagem e sobre como ela pode ser aplicada para análise de dados, especificamente no campo da biodiversidade.</p>
 
 </div>
 </div>
@@ -11796,13 +11806,22 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Neste notebook você vai aprender um pouco sobre:</p>
-<ol>
-<li><a href="#1.-Tipos">Tipos</a>;</li>
-<li><a href="#2.-Operadores">Operadores</a>;</li>
-<li><a href="#3.-Funções">Funções</a>;</li>
-<li><a href="#4.-Construindo-a-calculadora-bacteriana">Construção da Calculadora Bacteriana</a>;</li>
-<li><a href="#5.-Avaliando-o-modelo">Avaliação da Calculadora Bacteriana</a>.</li>
+<p>Porém hoje começaremos com o básico! Vou mostrar algumas das construções mais fundamentais da linguagem, como <strong>tipos</strong>, <strong>operadores</strong>, <strong>funções</strong> e <strong>variáveis</strong>.
+Você pode acompanhar, mexer e executar o código acessando esta <a href="https://mybinder.org/v2/gh/pedrosiracusa/bios/gh-pages?filepath=notebooks%2Fbaccalc.ipynb" target="_blank">versão *live*</a> do notebook. Experimente!!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Conte&#250;dos">Conte&#250;dos<a class="anchor-link" href="#Conte&#250;dos">&#182;</a></h5><ol>
+<li><a href="#1.-Tipos">Tipos</a></li>
+<li><a href="#2.-Operadores">Operadores</a></li>
+<li><a href="#3.-Funções">Funções</a></li>
+<li><a href="#4.-Construindo-a-calculadora-bacteriana">Construindo a calculadora bacteriana</a></li>
+<li><a href="#5.-Avaliando-o-modelo">Avaliando o modelo</a></li>
 </ol>
 
 </div>
@@ -11812,8 +11831,24 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Contextualiza&#231;&#227;o">Contextualiza&#231;&#227;o<a class="anchor-link" href="#Contextualiza&#231;&#227;o">&#182;</a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Vamos construir uma calculadora que nos permitirá estimar o tamanho populacional de bactérias, usando um <strong>modelo de crescimento exponencial</strong>. 
 O tempo médio que estas bactérias levam para se reproduzir por fissão binária - ou tempo de geração - é de 20 minutos (ou seja, a bactéria se divide a cada 20 minutos). Como construir um modelo para estimar o tamanho desta população no meio como resultado do tempo decorrido desde sua colonização?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Diremos que o tamanho populacional será calculado em função do tempo e do tamanho da população colonizadora (número de bactérias no tempo zero). O modelo matemático é dado abaixo:</p>
 
 </div>
@@ -11823,7 +11858,8 @@ O tempo médio que estas bactérias levam para se reproduzir por fissão binári
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>$$ N(N_i, t) = N_i \cdot 2^{\frac{t}{g}}$$</p>
+<p><span id="exp1"></span></p>
+<p>$$ N(N_i, t) = N_i \cdot 2^{\frac{t}{g}} \qquad \qquad \textit{( 1 )}$$</p>
 
 </div>
 </div>
@@ -11919,6 +11955,16 @@ O tempo médio que estas bactérias levam para se reproduzir por fissão binári
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A função <code>type</code> é nativa do <em>Python</em>, e permite descobrir o tipo de um determinado <strong>valor</strong>. Perceba que os parênteses depois do nome da função servem para dizer que queremos executá-la passando como parâmetro determinado valor (que vai entre os parênteses).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><strong>obs:</strong> no jupyter notebook você pode executar uma <strong>célula de código</strong> (as que têm um <code>In []</code> ao lado) usando o comando <code>ctrl+ENTER</code>. Você pode alterar o código na célula apertando <code>ENTER</code>, o que faz a célula entrar em <strong>modo de edição</strong> (contorno verde). Para sair do modo de edição e entrar no <strong>modo de comando</strong> você pode apertar <code>ESC</code> ou simplesmente executar a célula. Veja mais detalhes sobre o funcionamento dos notebooks <a href="https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Jupyter_Notebook_Cheat_Sheet.pdf" target="_blank">aqui</a>.</p>
+</blockquote>
 
 </div>
 </div>
@@ -12304,7 +12350,7 @@ O tempo médio que estas bactérias levam para se reproduzir por fissão binári
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>$$\frac{(13+5)}{(13/5)}$$</p>
+<p>$$\frac{(13+5)}{(3\times3)}$$</p>
 
 </div>
 </div>
@@ -12314,7 +12360,7 @@ O tempo médio que estas bactérias levam para se reproduzir por fissão binári
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">13</span><span class="o">+</span><span class="mi">5</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">13</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">13</span><span class="o">+</span><span class="mi">5</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12333,7 +12379,7 @@ O tempo médio que estas bactérias levam para se reproduzir por fissão binári
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>6.9230769230769225</pre>
+<pre>2.0</pre>
 </div>
 
 </div>
@@ -12365,7 +12411,7 @@ O tempo médio que estas bactérias levam para se reproduzir por fissão binári
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">13</span><span class="o">+</span><span class="mi">5</span> <span class="o">/</span> <span class="mi">13</span><span class="o">/</span><span class="mi">5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">13</span><span class="o">+</span><span class="mi">5</span> <span class="o">/</span> <span class="mi">3</span><span class="o">*</span><span class="mi">3</span>
 </pre></div>
 
 </div>
@@ -12384,7 +12430,7 @@ O tempo médio que estas bactérias levam para se reproduzir por fissão binári
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>13.076923076923077</pre>
+<pre>18.0</pre>
 </div>
 
 </div>
@@ -12508,7 +12554,7 @@ Vou explicar cada parte...</p>
 <li>Vamos chamar nossa função de <code>bacCalc</code>;</li>
 <li>Ela recebe o tamanho da população colonizadora <code>n_i</code> e o tempo decorrido <code>t</code>;</li>
 <li>O tempo de geração <code>g</code> será sempre $20$ minutos;</li>
-<li>Ela deve calcular e <strong>retornar</strong> a expressão $N_i \cdot 2^{\frac{t}{g}}$.</li>
+<li>Ela deve calcular e <strong>retornar</strong> a expressão $N_i \cdot 2^{\frac{t}{g}}$ [ <a href="#exp1">expressão 1</a> ].</li>
 </ul>
 
 </div>
@@ -12602,13 +12648,23 @@ Vou explicar cada parte...</p>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bacCalc</span><span class="p">(</span><span class="n">n_i</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">n_i</span> <span class="o">*</span> <span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">t</span><span class="o">/</span><span class="n">g</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">n_i</span> <span class="o">*</span> <span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">t</span><span class="o">/</span><span class="n">g</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">n</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Na função acima fizemos basicamente duas coisas. Primeiro computamos a expressão do crescimento bacteriano (<a href="#exp1">expressão *1*</a>) e então <strong>atribuímos o resultado</strong> à variável <code>n</code>. Em seguida, retornamos o valor que está atribuído a <code>n</code>.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12791,7 +12847,8 @@ Vamos considerar que começamos com uma população de $2$ bactérias. Após dec
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Seria mais útil ainda se pudéssemos replicar este cálculo para uma planilha de dados inteira!! Este é o conceito dos <strong>loops</strong>, em que um pedaço de código é executado repetidas vezes (e computadores fazer isso de forma extremamente rápida). Mas este assunto fica para um próximo notebook. Espero que este notebook tenha sido útil para você que quer começar a aprender a programar! Não se esqueça de brincar um pouco com este código na <a href="https://mybinder.org/v2/gh/pedrosiracusa/bios/gh-pages?filepath=notebooks%2Fbaccalc.ipynb">versão <em>live</em></a> deste notebook!</p>
+<p>Seria mais útil ainda se pudéssemos replicar este cálculo para uma planilha de dados inteira!! Este é o conceito dos <strong>loops</strong>, em que um pedaço de código é executado repetidas vezes (e computadores fazer isso de forma extremamente rápida). 
+Mas este assunto fica para um próximo notebook.</p>
 
 </div>
 </div>
