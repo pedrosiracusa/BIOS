@@ -2,6 +2,7 @@
   position: Mestrando em Modelagem Computacional
   affiliation: Laboratório Nacional de Computação Científica - LNCC 
   github: pedrosiracusa
+  location: Brasília - DF
   interests:
     - Data Science
     - Machine Learning
@@ -12,6 +13,7 @@
   position: Doutoranda em Ecologia
   affiliation: UNESP Rio Claro
   github: fariadamasceno
+  location: Rio Claro - SP
   interests:
     - Análises estatísticas
     - R, Python
@@ -22,6 +24,7 @@
   position: Tecnologista 
   affiliation: Instituo de Pesquisas JBRJ
   github: edalcin
+  location: Rio de Janeiro - RJ
   interests:
     - Sistemas de informação sobre Biodiversidade
     - Governança, gestão e entrega de dados 
