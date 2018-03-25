@@ -21,5 +21,7 @@ Qualquer um interessado em aprender e/ou compartilhar conhecimentos neste contex
 Para quem nunca ouviu falar, o *github* é uma plataforma muito interessante que nos permite criar repositórios e projetos. 
 É muito popular na comunidade de programadores
 * Apresente-se e conheça os membros do grupo nesta [***thread***](https://github.com/pedrosiracusa/BIOS/issues/2)
+* Acesse o [chat público](https://gitter.im/bioschat/Lobby) do nosso grupo, que também pode ser acessado através da nossa página
+* Inscreva-se no nosso [calendário](https://calendar.google.com/calendar/embed?src=s8e9858c2e2o1gdd8o63b5fi64%40group.calendar.google.com&ctz=America%2FSao_Paulo) (botão no canto inferior direito da página), para receber notificações sobre eventos do grupo
 * Caso tenha uma dúvida ou sugestão, [crie uma nova ***issue***](https://github.com/pedrosiracusa/BIOS/issues/new)
 * Siga este repositório: Clique no botão '*Watch*' na parte superior direita da página para receber notificações por email da atividade do nosso grupo
