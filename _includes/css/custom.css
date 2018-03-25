@@ -60,3 +60,12 @@ Events style
 	padding-top: 0.5em;
 	font-size:1.1em;
 }
+
+
+
+/*=====================
+  Gitter chat - Sidecar
+  =====================*/
+.gitter-chat-embed{
+    z-index: 1035;
+}
