@@ -5,6 +5,8 @@
 #and choose a language from the options in the _data directory:
 title: BIOS
 description: "Grupo de Estudos em Data Science e Biodiversidade"
+url: http://pedrosiracusa.com/
+
 language: pt
 
 #Step 2: press the green 'Commit Changes' button at the bottom of this page.
